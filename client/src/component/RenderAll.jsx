@@ -12,11 +12,11 @@ const RenderAll = () => {
       <Sidebar />
       <div className="w-full">
         <Navigations />
-        <div className="bg-white h-[90vh]">
+        <div className="bg-white h-[90vh] w-full">
           <Routes>
             <Route index element={<HomePage />} />
             <Route path="/login" element={<LoginPage />} />
-            <Route path="watch" element={<WatchPage />} />
+            <Route path="/watch" element={<WatchPage />} />
           </Routes>
         </div>
       </div>

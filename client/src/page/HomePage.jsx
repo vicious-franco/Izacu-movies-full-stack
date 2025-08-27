@@ -2,7 +2,6 @@ import React from "react";
 import { footerData, heroMovieBanner, moviesData } from "../assets/data";
 import { FaPlay } from "react-icons/fa";
 import { IoWifi } from "react-icons/io5";
-import { VscVerifiedFilled } from "react-icons/vsc";
 import RenderMovies from "../component/RenderMovies";
 import Footer from "../component/Footer";
 
@@ -11,7 +10,7 @@ const HomePage = () => {
     console.log(e.target.value);
   };
   return (
-    <section className="bg-[#010103] h-full w-full overflow-y-scroll scroll-style ">
+    <section className="bg-black h-full w-full overflow-y-scroll scroll-style ">
       <div className="flex w-full overflow-x-scroll scroll-style-one ">
         {heroMovieBanner.map(
           ({ image, name, description, releaseYear, _id }) => {

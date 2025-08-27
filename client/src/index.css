@@ -1,7 +1,8 @@
 @import "tailwindcss";
 body {
-  background-color: #010103;
+  background-color: black;
 }
+
 * {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
@@ -17,6 +18,10 @@ body {
   cursor: pointer;
   margin-top: 2em;
 }
+.scroll-style-one::-webkit-scrollbar-thumb:hover{
+  background-color: darkred;
+
+}
 
 .scroll-style::-webkit-scrollbar {
   background-color: #33333bc1;
@@ -25,12 +30,13 @@ body {
 }
 .scroll-style::-webkit-scrollbar-thumb {
   appearance: none;
-  background-color: #612b417c;
+  background-color: transparent;
   cursor: pointer;
   width: 12px;
 }
 .scroll-style::-webkit-scrollbar-thumb:hover {
-  background-color: #931646be;
+  background-color: darkred;
+  cursor: pointer;
 }
 .scroll-style::-webkit-scrollbar-track {
   appearance: none;

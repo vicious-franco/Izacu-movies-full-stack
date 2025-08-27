@@ -14,7 +14,7 @@ const Sidebar = () => {
       initial={{ width: "80px", opacity: 0 }}
       animate={{ width: showSidebar ? "220px" : "", opacity: 1 }}
       transition={{ duration: 0.4, type: "tween" }}
-      className={`hidden md:flex border bg-[#010103] border-white/10 text-white h-screen ${
+      className={`hidden md:flex border bg-black border-white/10 text-white h-screen ${
         showSidebar ? null : " justify-between items-center"
       } flex-col overflow-auto `}
     >
@@ -52,7 +52,7 @@ const Sidebar = () => {
             return (
               <div
                 key={id}
-                className="flex  items-center gap-2 cursor-pointer hover:bg-red-800 px-2 active:bg-red-800  rounded-2xl py-3 capitalize  "
+                className="flex   items-center gap-2 cursor-pointer hover:bg-red-800 px-2 active:bg-red-800  rounded-2xl py-3 capitalize  "
               >
                 <span className="text-xl">
                   <Icon />
@@ -86,7 +86,9 @@ const Sidebar = () => {
           return (
             <div
               key={id}
-              className="flex items-center gap-2 cursor-pointer hover:bg-red-800 rounded-2xl px-2 py-3 capitalize  "
+              className={`flex  items-center gap-2  cursor-pointer hover:bg-red-800 rounded-2xl  py-3 capitalize ${
+                showSidebar ? "px-2" : "px-4 mx-2"
+              } `}
             >
               <span className="text-xl">
                 <Icon />
@@ -102,16 +104,7 @@ const Sidebar = () => {
           );
         })}
       </div>
-      <div
-        className={`mx-6 flex items-center gap-2 mt-7 border-b border-gray-600/50 pb-6 ${
-          showSidebar ? "block" : "hidden"
-        }`}
-      >
-        <span className="flex cursor-pointer hover:bg-red-700 duration-300 h-9 w-9 bg-red-800 rounded-full items-center justify-center ">
-          <IoIosArrowDown />
-        </span>
-        <span className="text-sm text-gray-400 font-semibold">Load more</span>
-      </div>
+
       <div className="mt-4 pb-4">
         <h1 className="text-gray-500 text-center font-light">ATLAS Dev</h1>
       </div>

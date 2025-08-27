@@ -1,21 +1,22 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { LuSearch } from "react-icons/lu";
 import { IoIosNotificationsOutline } from "react-icons/io";
-import { GoGear } from "react-icons/go";
 import person from "../assets/images/slide4.jpg";
 import { MyContext } from "../context/Context";
 import { motion } from "framer-motion";
+import Profile from "./Profile";
 
 const Navigations = () => {
   const { showSidebar, setshowSidebar } = useContext(MyContext);
+  const [showSettings, setshowSettings] = useState(false);
   console.log(showSidebar);
   return (
-    <div className="flex-1   text-white h-[10vh] w-full flex items-center">
+    <div className="relative flex-1 text-white h-[10vh] w-full flex items-center">
       <div className="flex justify-between w-full sm:px-6 ">
         <span
           onClick={() => setshowSidebar((prev) => !prev)}
-          className="hidden md:inline-flex text-xl text-gray-300 hover:text-gray-100 duration-300 items-center justify-center bg-black hover:shadow-[inset_0px_0px_5pX_rgba(0,0,0,0.7)] cursor-pointer  px-3  border border-white/25 rounded-md"
+          className="hidden md:inline-flex text-xl text-gray-300 hover:text-gray-100 duration-300 items-center justify-center bg-black hover:bg-[#0f0f11] cursor-pointer  px-3  border border-white/25 rounded-md"
         >
           <motion.span
             initial={{ rotate: "0 deg" }}
@@ -37,17 +38,19 @@ const Navigations = () => {
             </span>
           </div>
 
-          <span className="text-2xl md:text-3xl">
+          <span className="text-2xl cursor-pointer text-gray-100 md:text-3xl">
             <IoIosNotificationsOutline />
           </span>
-          <span className="text-2xl md:text-3xl">
-            <GoGear />
-          </span>
-          <span className="w-8 h-8 md:w-12 md:h-12 overflow-hidden object-fit rounded-full">
+
+          <span
+            onClick={() => setshowSettings((prev) => !prev)}
+            className="w-8 h-8 md:w-12 hover:cursor-pointer  md:h-12 overflow-hidden object-fit rounded-full"
+          >
             <img src={person} alt="profile image" />
           </span>
         </div>
       </div>
+      {showSettings && <Profile />}
     </div>
   );
 };
