@@ -12,11 +12,11 @@ const Navigations = () => {
   const [showSettings, setshowSettings] = useState(false);
   console.log(showSidebar);
   return (
-    <div className="relative flex-1 text-white h-[10vh] w-full flex items-center">
+    <div className="relative   bg-gradient-to-br from-blue-950  to-blue-950/40 flex-1 text-white h-[10vh] w-full flex items-center">
       <div className="flex justify-between w-full sm:px-6 ">
         <span
           onClick={() => setshowSidebar((prev) => !prev)}
-          className="hidden md:inline-flex text-xl text-gray-300 hover:text-gray-100 duration-300 items-center justify-center bg-black hover:bg-[#0f0f11] cursor-pointer  px-3  border border-white/25 rounded-md"
+          className="hidden md:inline-flex text-xl text-gray-300 hover:text-gray-100 duration-300 items-center justify-center bg-transparent hover:bg-blue-950 cursor-pointer  px-3  border border-white/25 rounded-md"
         >
           <motion.span
             initial={{ rotate: "0 deg" }}
@@ -31,7 +31,7 @@ const Navigations = () => {
             <input
               type="text"
               placeholder="Search everything"
-              className="flex-1 w-full border border-gray-400/40 px-10 py-2 rounded-md"
+              className="flex-1 w-full border border-white/50 focus:outline-violet-600 active:ouline-violet-600 outline-none px-10 py-2 rounded-md"
             />
             <span className="absolute text-2xl left-2 top-2 text-gray-400">
               <LuSearch />

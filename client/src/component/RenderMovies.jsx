@@ -9,12 +9,12 @@ const RenderMovies = ({ type, movies }) => {
           {type}
         </h1>
       </div>
-      <div className="flex gap-4 flex-wrap my-4 w-full  px-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 my-4 w-full  px-4">
         {movies.map(({ _id, image, name, otherName, user }) => {
           return (
             <div
               key={_id}
-              className="w-[16em] bg-white/4 m-[2em_auto]  h-[21em] border border-white/8 hover:-translate-1 duration-400 cursor-pointer text-white rounded-md overflow-hidden"
+              className="w-full sm:max-w-[16em] hover:shadow-[2px_2px_12px_#1d357c] bg-white/4 m-[2em_auto]  h-fit sm:h-[21em] border border-white/8 hover:-translate-1 duration-400 cursor-pointer text-white rounded-md overflow-hidden"
             >
               <div className="w-full h-[60%] overflow-hidden ">
                 <img
@@ -25,7 +25,7 @@ const RenderMovies = ({ type, movies }) => {
               </div>
               <div className="px-4 py-2">
                 <h1 className="font-bold uppercase ">{name}</h1>
-                <p className="uppercase text-md">{otherName}</p>
+                <p className="uppercase text-sm sm:text-md">{otherName}</p>
               </div>
               <div className="flex px-3 py-1">
                 <span className="h-10 w-10 inline-block overflow-hidden rounded-full">

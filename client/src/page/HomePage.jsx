@@ -10,7 +10,7 @@ const HomePage = () => {
     console.log(e.target.value);
   };
   return (
-    <section className="bg-black h-full w-full overflow-y-scroll scroll-style ">
+    <section className="bg-gradient-to-b from-blue-950 to-[#0f0f11] h-full w-full overflow-y-scroll scroll-style ">
       <div className="flex w-full overflow-x-scroll scroll-style-one ">
         {heroMovieBanner.map(
           ({ image, name, description, releaseYear, _id }) => {
@@ -63,7 +63,7 @@ const HomePage = () => {
           onChange={handleSelection}
           name=""
           id=""
-          className="border border-white/30 md:px-5 px-2 md:py-2 py-1 outline-none bg-black text-gray-200 font-semibold rounded-md"
+          className="border border-white/30 md:px-5 px-2 md:py-2 py-1 outline-none text-white bg-blue-950 font-semibold rounded-md"
         >
           <option value="select one" defaultValue={true}>
             select one
@@ -78,7 +78,7 @@ const HomePage = () => {
       })}
       <div
         className="
-      grid grid-cols-2 md:grid-cols-4 gap-4 text-white bg-black border-t border-white/20 p-6 
+      grid grid-cols-2 md:grid-cols-4 gap-4 text-white bg-gradient-to-br from-blue-950 to-blue-[#0f0f11]  border-t border-white/20 p-6 
       "
       >
         {footerData.map((items, index) => {

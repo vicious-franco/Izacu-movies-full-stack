@@ -14,7 +14,7 @@ const Sidebar = () => {
       initial={{ width: "80px", opacity: 0 }}
       animate={{ width: showSidebar ? "220px" : "", opacity: 1 }}
       transition={{ duration: 0.4, type: "tween" }}
-      className={`hidden md:flex border bg-black border-white/10 text-white h-screen ${
+      className={`hidden md:flex border bg-gradient-to-bl from-blue-950 to-[#0f0f11] border-white/5 text-white h-screen ${
         showSidebar ? null : " justify-between items-center"
       } flex-col overflow-auto `}
     >
