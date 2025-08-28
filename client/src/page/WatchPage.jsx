@@ -12,11 +12,12 @@ const WatchPage = () => {
         <div className="px-3 md:pl-4 flex-1">
           <div className="w-full">
             <div className="w-full  m-auto h-[60vh]   ">
-              <video
+              <iframe
+                src="https://hglink.to/e/9vca71i6sj8q"
                 className="w-full h-full  object-cover "
-                controls={true}
-                src={video}
-              ></video>
+                allowFullScreen={true}
+                frameborder="0"
+              ></iframe>
             </div>
             <div className="flex">
               <div className=" my-10 flex gap-10">

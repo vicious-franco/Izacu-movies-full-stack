@@ -5,8 +5,10 @@ import { typeOfMovies } from "../assets/data";
 import { IoIosArrowDown } from "react-icons/io";
 import { BiSolidCameraMovie } from "react-icons/bi";
 import { MyContext } from "../context/Context";
+import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
+  const navigate = useNavigate();
   const { showSidebar } = useContext(MyContext);
 
   return (
@@ -18,9 +20,12 @@ const Sidebar = () => {
         showSidebar ? null : " justify-between items-center"
       } flex-col overflow-auto `}
     >
-      <div className="flex items-center gap-2  mt-4">
+      <div
+        onClick={() => navigate("/")}
+        className="flex items-center gap-2 cursor-pointer mt-4"
+      >
         <span
-          className={`font-bold text-3xl text-red-800 inline-block ${
+          className={`font-bold text-3xl  text-red-800 inline-block ${
             showSidebar ? "" : "m-auto"
           }`}
         >
