@@ -5,6 +5,7 @@ import HomePage from "../page/HomePage";
 import LoginPage from "../page/LoginPage";
 import WatchPage from "../page/WatchPage";
 import Navigations from "./Navigations";
+import SearchPage from "../page/SearchPage";
 
 const RenderAll = () => {
   return (
@@ -17,6 +18,7 @@ const RenderAll = () => {
             <Route index element={<HomePage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/watch" element={<WatchPage />} />
+            <Route path="/browse" element={<SearchPage />} />
           </Routes>
         </div>
       </div>
