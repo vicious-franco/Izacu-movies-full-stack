@@ -7,6 +7,7 @@ const Context = ({ children }) => {
   const [showSidebar, setshowSidebar] = useState(false);
   const [showSettings, setshowSettings] = useState(false);
   const { pathname } = useLocation();
+  const [active, setActive] = useState({ list_one: false, list_two: true });
 
   const tools = {
     showSidebar,
@@ -14,6 +15,8 @@ const Context = ({ children }) => {
     showSettings,
     setshowSettings,
     pathname,
+    active,
+    setActive,
   };
   return <MyContext.Provider value={tools}>{children}</MyContext.Provider>;
 };

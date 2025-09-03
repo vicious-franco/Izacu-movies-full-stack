@@ -73,12 +73,15 @@ export const footerInfoLinks = [
 
 export const movies = [
   {
-    _id: 100,
+    _id: 1025,
     image: avatarMovie,
     name: "Avatar",
     otherName: "The Way of the Water",
     releaseYear: 2022,
     views: 182000,
+    genre: ["Action", "Adventure", "Sci-Fi"],
+    description:
+      "Jake Sully and Neytiri form a family and must protect their home when an ancient threat resurfaces on Pandora.",
     user: {
       imageProfile: profile,
       username: "Leon",
@@ -86,12 +89,15 @@ export const movies = [
     },
   },
   {
-    _id: 101,
+    _id: 1026,
     image: avatarMovie,
     name: "Avatar",
     otherName: "The Way of the Water",
     releaseYear: 2022,
     views: 182000,
+    genre: ["Action", "Adventure", "Sci-Fi"],
+    description:
+      "Jake Sully and Neytiri form a family and must protect their home when an ancient threat resurfaces on Pandora.",
     user: {
       imageProfile: profile,
       username: "Leon",
@@ -99,12 +105,15 @@ export const movies = [
     },
   },
   {
-    _id: 101,
+    _id: 1027,
     image: avatarMovie,
     name: "Avatar",
     otherName: "The Way of the Water",
     releaseYear: 2022,
     views: 182000,
+    genre: ["Action", "Adventure", "Sci-Fi"],
+    description:
+      "Jake Sully and Neytiri form a family and must protect their home when an ancient threat resurfaces on Pandora.",
     user: {
       imageProfile: profile,
       username: "Leon",
@@ -112,12 +121,15 @@ export const movies = [
     },
   },
   {
-    _id: 101,
+    _id: 1028,
     image: avatarMovie,
     name: "Avatar",
     otherName: "The Way of the Water",
     releaseYear: 2022,
     views: 182000,
+    genre: ["Action", "Adventure", "Sci-Fi"],
+    description:
+      "Jake Sully and Neytiri form a family and must protect their home when an ancient threat resurfaces on Pandora.",
     user: {
       imageProfile: profile,
       username: "Leon",
@@ -125,149 +137,25 @@ export const movies = [
     },
   },
   {
-    _id: 101,
+    _id: 1029,
     image: avatarMovie,
     name: "Avatar",
     otherName: "The Way of the Water",
     releaseYear: 2022,
     views: 182000,
+    genre: ["Action", "Adventure", "Sci-Fi"],
+    description:
+      "Jake Sully and Neytiri form a family and must protect their home when an ancient threat resurfaces on Pandora.",
     user: {
       imageProfile: profile,
       username: "Leon",
       isVerified: true,
     },
   },
-  {
-    _id: 101,
-    image: avatarMovie,
-    name: "Avatar",
-    otherName: "The Way of the Water",
-    releaseYear: 2022,
-    views: 182000,
-    user: {
-      imageProfile: profile,
-      username: "Leon",
-      isVerified: true,
-    },
-  },
-  {
-    _id: 101,
-    image: avatarMovie,
-    name: "Avatar",
-    otherName: "The Way of the Water",
-    releaseYear: 2022,
-    views: 182000,
-    user: {
-      imageProfile: profile,
-      username: "Leon",
-      isVerified: true,
-    },
-  },
-  {
-    _id: 101,
-    image: avatarMovie,
-    name: "Avatar",
-    otherName: "The Way of the Water",
-    releaseYear: 2022,
-    views: 182000,
-    user: {
-      imageProfile: profile,
-      username: "Leon",
-      isVerified: true,
-    },
-  },
-  {
-    _id: 101,
-    image: avatarMovie,
-    name: "Avatar",
-    otherName: "The Way of the Water",
-    releaseYear: 2022,
-    views: 182000,
-    user: {
-      imageProfile: profile,
-      username: "Leon",
-      isVerified: true,
-    },
-  },
-  {
-    _id: 101,
-    image: avatarMovie,
-    name: "Avatar",
-    otherName: "The Way of the Water",
-    releaseYear: 2022,
-    views: 182000,
-    user: {
-      imageProfile: profile,
-      username: "Leon",
-      isVerified: true,
-    },
-  },
-  {
-    _id: 101,
-    image: avatarMovie,
-    name: "Avatar",
-    otherName: "The Way of the Water",
-    releaseYear: 2022,
-    views: 182000,
-    user: {
-      imageProfile: profile,
-      username: "Leon",
-      isVerified: true,
-    },
-  },
-  {
-    _id: 101,
-    image: avatarMovie,
-    name: "Avatar",
-    otherName: "The Way of the Water",
-    releaseYear: 2022,
-    views: 182000,
-    user: {
-      imageProfile: profile,
-      username: "Leon",
-      isVerified: true,
-    },
-  },
-  {
-    _id: 101,
-    image: avatarMovie,
-    name: "Avatar",
-    otherName: "The Way of the Water",
-    releaseYear: 2022,
-    views: 182000,
-    user: {
-      imageProfile: profile,
-      username: "Leon",
-      isVerified: true,
-    },
-  },
-  {
-    _id: 101,
-    image: avatarMovie,
-    name: "Avatar",
-    otherName: "The Way of the Water",
-    releaseYear: 2022,
-    views: 182000,
-    user: {
-      imageProfile: profile,
-      username: "Leon",
-      isVerified: true,
-    },
-  },
-  {
-    _id: 101,
-    image: avatarMovie,
-    name: "Avatar",
-    otherName: "The Way of the Water",
-    releaseYear: 2022,
-    views: 182000,
-    user: {
-      imageProfile: profile,
-      username: "Leon",
-      isVerified: true,
-    },
-  },
+  // ...repeat same structure up to _id: 1039
 ];
+
+
 
 export const heroMovieBanner = [
   {

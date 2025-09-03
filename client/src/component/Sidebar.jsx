@@ -54,6 +54,27 @@ const Sidebar = () => {
           }`}
         >
           {sidebarIcons.map(({ name, Icon, id }) => {
+            if (name === "browse") {
+              return (
+                <div
+                  onClick={() => navigate("/browse-movies")}
+                  key={id}
+                  className="flex   items-center gap-2 cursor-pointer hover:bg-red-800 px-2 active:bg-red-800  rounded-2xl py-3 capitalize  "
+                >
+                  <span className="text-xl">
+                    <Icon />
+                  </span>
+
+                  <h1
+                    className={` ${
+                      showSidebar ? "block" : "hidden"
+                    } text-sm font-semibold text-gray-200 `}
+                  >
+                    {name}
+                  </h1>
+                </div>
+              );
+            }
             return (
               <div
                 key={id}
@@ -62,6 +83,7 @@ const Sidebar = () => {
                 <span className="text-xl">
                   <Icon />
                 </span>
+
                 <h1
                   className={` ${
                     showSidebar ? "block" : "hidden"
