@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Sidebar from "./Sidebar";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Outlet } from "react-router-dom";
 import HomePage from "../page/HomePage";
 import LoginPage from "../page/LoginPage";
 import WatchPage from "../page/WatchPage";
@@ -18,12 +18,7 @@ const RenderAll = () => {
           <Navigations />
         </div>
         <div className="bg-white h-[90vh] w-full">
-          <Routes>
-            <Route index element={<HomePage />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/watch" element={<WatchPage />} />
-            <Route path="/browse-movies" element={<SearchPage />} />
-          </Routes>
+          <Outlet />
         </div>
       </div>
     </section>
